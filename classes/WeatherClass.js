@@ -37,7 +37,7 @@ export class Weather {
 
     setImageSrc(value) {
         let imgExtension = dateService.isDay() ? "_day.png" : "_night.png";
-        this._imageSrc = "/images/icons/" + value.toLowerCase() + imgExtension;
+        this._imageSrc = "images/icons/" + value.toLowerCase() + imgExtension;
     }
 
     getImageSrc() {
