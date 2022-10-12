@@ -30,7 +30,7 @@ const options = {
     maximumAge: 0
 };
 
-let apiUrl = apiCall + "lat=" + crdByDefault[0].latitude + "&lon=" + crdByDefault[0].longitude + "&appid=" + API_KEY;
+let apiUrl = apiCall + "q=" + crdByDefault[0].city + "&appid=" + API_KEY;
 getCurrentWeatherResponse(apiUrl, displayWeather);
 
 function success(pos) {
