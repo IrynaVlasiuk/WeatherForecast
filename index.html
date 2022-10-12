@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" type="module" defer></script>
+</head>
+<body>
+  <main>
+      <section class="left-section">
+          <div class="title">Local Weather Report</div>
+          <div class="location-info"></div>
+          <div class="hr"></div>
+          <div class="temperature-info"><span class="value"></span>&#176; <span class="degree">C</span></div>
+          <div class="feels-like">Feels like <span class="value"></span>&#176; <span class="degree">C</span></div>
+          <div class="temperature-limits">
+              <div>
+                  <span>min:</span>
+                  <span class="min-value"></span>
+                  &#176;
+                  <span class="degree">C</span>
+              </div>
+             <div>
+                 <span>max:</span>
+                 <span class="max-value"></span>
+                 &#176;
+                 <span class="degree">C</span>
+             </div>
+          </div>
+          <div class="img-info"><img src=""></div>
+          <div class="weather-description-info"></div>
+          <div class="three-days-weather">
+              <div class="first-day">
+              </div>
+              <div class="second-day"></div>
+              <div class="third-day"></div>
+          </div>
+      </section>
+      <section class="center-section">
+          <input name="search-city" class="search-city" placeholder="Enter city">
+          <div class="default-cities-weather"></div>
+          <div class="main-weather">
+              <div class="location-info"></div>
+              <div class="date-info"></div>
+              <div class="weather-info">
+                  <div class="img-info">
+                      <img src="">
+                      <div class="weather-description-info"></div>
+                  </div>
+                  <div class="temperature-block">
+                      <div class="temperature-info"><span class="value"></span>&#176; <span class="degree">C</span></div>
+                      <div class="feels-like">Feels like <span class="value"></span>&#176; <span class="degree">C</span></div>
+                  </div>
+                  <div class="temperature-limits">
+                      <div class="temperature-limits-block">
+                          <div>
+                              <span>min:</span>
+                              <span class="min-value"></span>&#176;
+                              <span class="degree">C</span>
+                          </div>
+                          <div>
+                              <span>max:</span>
+                              <span class="max-value"></span>&#176;
+                              <span class="degree">C</span>
+                          </div>
+                      </div>
+                      <div class="wind-info">Wind: <span class="value"></span></div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="right-section">
+          <div class="time-info"></div>
+          <div class="date-info"></div>
+      </section>
+  </main>
+</body>
+</html>
