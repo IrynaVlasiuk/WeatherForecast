@@ -30,6 +30,9 @@ const options = {
     maximumAge: 0
 };
 
+let apiUrl = apiCall + "lat=" + crdByDefault[0].latitude + "&lon=" + crdByDefault[0].longitude + "&appid=" + API_KEY;
+getCurrentWeatherResponse(apiUrl, displayWeather);
+
 function success(pos) {
     const crd = pos.coords;
     let apiUrl = apiCall + "lat=" + crd.latitude + "&lon=" + crd.longitude + "&appid=" + API_KEY;
@@ -38,9 +41,6 @@ function success(pos) {
 }
 
 function error(err) {
-    let apiUrl = apiCall + "lat=" + crdByDefault[0].latitude + "&lon=" + crdByDefault[0].longitude + "&appid=" + API_KEY;
-    getCurrentWeatherResponse(apiUrl, displayWeather);
-
     console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
